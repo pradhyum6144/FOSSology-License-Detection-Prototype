@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "text": "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction.",
+    "expected_license": "MIT"
+  },
+  {
+    "id": 2,
+    "text": "Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License.",
+    "expected_license": "Apache-2.0"
+  },
+  {
+    "id": 3,
+    "text": "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation.",
+    "expected_license": "GPL-2.0"
+  },
+  {
+    "id": 4,
+    "text": "Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met.",
+    "expected_license": "BSD-3-Clause"
+  },
+  {
+    "id": 5,
+    "text": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License.",
+    "expected_license": "LGPL-2.1"
+  },
+  {
+    "id": 6,
+    "text": "Copyright (c) 2024 Example Corp. All rights reserved. This code is proprietary and confidential.",
+    "expected_license": "Unknown"
+  },
+  {
+    "id": 7,
+    "text": "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License version 3.",
+    "expected_license": "GPL-3.0"
+  },
+  {
+    "id": 8,
+    "text": "Some ambiguous license text that might be MIT or Apache but we're not sure.",
+    "expected_license": "Unknown"
+  }
+]
+

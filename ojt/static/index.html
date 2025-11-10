@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOSSology License Detection Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 ML Assisted License Detection</h1>
+            <p class="subtitle">FOSSology-style prototype for flagging ambiguous license fragments</p>
+        </header>
+
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="analyze">Analyze Text</button>
+            <button class="tab-btn" data-tab="batch">Batch Analysis</button>
+            <button class="tab-btn" data-tab="triage">Triage View</button>
+            <button class="tab-btn" data-tab="evaluate">Evaluate</button>
+        </nav>
+
+        <!-- Analyze Tab -->
+        <div id="analyze-tab" class="tab-content active">
+            <div class="card">
+                <h2>Single Text Analysis</h2>
+                <textarea id="input-text" placeholder="Paste license text fragment here..."></textarea>
+                <button id="analyze-btn" class="btn btn-primary">Analyze License</button>
+                <div id="analyze-result" class="result-container"></div>
+            </div>
+        </div>
+
+        <!-- Batch Analysis Tab -->
+        <div id="batch-tab" class="tab-content">
+            <div class="card">
+                <h2>Batch Analysis</h2>
+                <div class="file-upload">
+                    <label for="file-input" class="btn btn-secondary">Upload JSON/CSV File</label>
+                    <input type="file" id="file-input" accept=".json,.csv" style="display: none;">
+                    <button id="load-samples-btn" class="btn btn-secondary">Load Sample Data</button>
+                </div>
+                <div id="batch-results" class="results-grid"></div>
+                <div class="export-controls">
+                    <button id="export-json-btn" class="btn btn-outline">Export JSON</button>
+                    <button id="export-csv-btn" class="btn btn-outline">Export CSV</button>
+                    <button id="export-spdx-btn" class="btn btn-outline">Export SPDX</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Triage Tab -->
+        <div id="triage-tab" class="tab-content">
+            <div class="card">
+                <h2>Triage Review</h2>
+                <p class="info-text">Review and accept/reject ambiguous license detections</p>
+                <div id="triage-list" class="triage-list"></div>
+            </div>
+        </div>
+
+        <!-- Evaluate Tab -->
+        <div id="evaluate-tab" class="tab-content">
+            <div class="card">
+                <h2>Evaluation Metrics</h2>
+                <p class="info-text">Evaluate precision, recall, and accuracy on labeled samples</p>
+                <button id="evaluate-btn" class="btn btn-primary">Run Evaluation</button>
+                <div id="evaluation-results" class="metrics-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+

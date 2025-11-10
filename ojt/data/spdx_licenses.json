@@ -1,0 +1,45 @@
+{
+  "MIT": {
+    "id": "MIT",
+    "name": "MIT License",
+    "osi_approved": true,
+    "fsf_libre": true,
+    "url": "https://spdx.org/licenses/MIT.html"
+  },
+  "Apache-2.0": {
+    "id": "Apache-2.0",
+    "name": "Apache License 2.0",
+    "osi_approved": true,
+    "fsf_libre": true,
+    "url": "https://spdx.org/licenses/Apache-2.0.html"
+  },
+  "GPL-2.0": {
+    "id": "GPL-2.0",
+    "name": "GNU General Public License v2.0",
+    "osi_approved": true,
+    "fsf_libre": true,
+    "url": "https://spdx.org/licenses/GPL-2.0.html"
+  },
+  "GPL-3.0": {
+    "id": "GPL-3.0",
+    "name": "GNU General Public License v3.0",
+    "osi_approved": true,
+    "fsf_libre": true,
+    "url": "https://spdx.org/licenses/GPL-3.0.html"
+  },
+  "BSD-3-Clause": {
+    "id": "BSD-3-Clause",
+    "name": "BSD 3-Clause License",
+    "osi_approved": true,
+    "fsf_libre": true,
+    "url": "https://spdx.org/licenses/BSD-3-Clause.html"
+  },
+  "LGPL-2.1": {
+    "id": "LGPL-2.1",
+    "name": "GNU Lesser General Public License v2.1",
+    "osi_approved": true,
+    "fsf_libre": true,
+    "url": "https://spdx.org/licenses/LGPL-2.1.html"
+  }
+}
+
